@@ -3,7 +3,6 @@ package util;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-
 public class ConfigReader {
 
 	private Properties prop;
