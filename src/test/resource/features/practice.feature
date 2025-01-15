@@ -24,5 +24,5 @@ Feature: Login to practice page
       | Sheet1    |      0 |
 
   @Portal_Open
-  Scenario Outline: Verify practise page componant
+  Scenario: Verify practise page componant
     Given Open practice page site "https://rahulshettyacademy.com/AutomationPractice/"
