@@ -49,7 +49,7 @@ public class DriverFactory {
 
 		switch (browsername.toLowerCase()) {
 		case "chromium":
-			tlBrowser.set(getplaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tlBrowser.set(getplaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
 			break;
 		case "firefox":
 			tlBrowser.set(getplaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
@@ -59,7 +59,7 @@ public class DriverFactory {
 			break;
 		case "chrome":
 			tlBrowser.set(
-					getplaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
+					getplaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(true)));
 			break;
 		default:
 			System.out.println("Please provide exact browser name....");
