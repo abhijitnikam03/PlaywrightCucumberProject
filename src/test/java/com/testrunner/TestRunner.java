@@ -10,5 +10,8 @@ import org.junit.runner.RunWith;
 		glue = { "apphook", "com/stepdef" }, dryRun = false, plugin = { "pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true)
 public class TestRunner  {
-
+	
+	public static void main(String[] args) {
+        System.out.println("Inside Test Runner class");
+    }
 }
